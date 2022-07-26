@@ -28,7 +28,7 @@ right: -200px;
 top: -100px;
 }
 #design-by .design-container .info-section{
-  width:40%;
+  width: 40%;
   display: inline-block;
   float: left;
 }
@@ -88,15 +88,13 @@ vertical-align: top;
   z-index: 2;
 }
 
-
 #design-by .design-container .icons-section{
-  width: 60%;
+  width: 50%;
   background: white;
   display: inline-block;
-  float: left;
   position: relative;
 }
-#design-by .design-container .icons-section .refresh-circle{
+#design-by .design-container .icons-section__container .refresh-circle{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -104,18 +102,20 @@ vertical-align: top;
   height: 80px;
   background: white;
   border-radius: 50%;
-  top: 40%;
-  left: 45%;
+  top: 82%;
+  left: 90%;
+  z-index: 1;
 }
-#design-by .design-container .icons-section .refresh-circle .fa-solid{
+#design-by .design-container .icons-section__container .refresh-circle .fa-solid{
   position: relative;
   color: #FEA83B;
   font-size: 2.5rem;
   top: 20px;
   left: 20px;
+  z-index:
 }
 #design-by .design-container .icons-section .icon-box{
-  width: 50%;
+  width: 100%;
   height: 226px;
   display: inline-block;
   float: left;
@@ -128,4 +128,10 @@ vertical-align: top;
   font-size: 3rem;
   margin-bottom: 2rem;
   margin-top: 61px;
+}
+
+#design-by .design-container .icons-section__container{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
 }
